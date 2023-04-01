@@ -1,39 +1,38 @@
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
+import React, { Component } from 'react';
 import './App.css';
+import Home from './Home/Home';
+import News from './News/News';
+import Contact from './Contact/Contact';
 
 
-const Home = () => (
-  <h1>Strona Główna</h1>
-)
 
-
-const News = () => (
-  <h1>Akrualności</h1>
-)
-
-const Contact = () => (
-  <h1>Kontakt</h1>
-)
-
-function App() {
-  return (
-    <Router>
+class App extends Component {
+  state = {  } 
+  render() { 
+    return (
+      <BrowserRouter>
     <div className="App">
       <header>
         <nav>
           <ul>
-            <li><Link to='/'>Start</Link></li>
-            <li><Link to='/news'>Aktualności</Link></li>
-            <li>Kontakt</li>
+            <li><NavLink to="/" exact="true">Start</NavLink></li>
+            <li><NavLink to="/news">Aktualności</NavLink></li>
+            <li><NavLink to="/contact">Kontakt</NavLink></li>
           </ul>
         </nav>
         </header>
-        <Route path='/' exact component={Home} />
-        <Route path='/news' component={News} />
-        <Route path='/contact' component={Contact}/>
+          <section>
+            <Routes>
+          <Route path="/" exact element={<Home/>} />
+          <Route path="/news" element={<News/>} />
+              <Route path="/contact" element={<Contact/>} />
+              </Routes>
+        </section>
       </div>
-    </Router>
-  );
+    </BrowserRouter>
+    );
+  }
 }
-
+ 
 export default App;
