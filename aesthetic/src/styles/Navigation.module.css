@@ -6,7 +6,7 @@
     list-style-type: none;
 }
 
-.menu a{
+.item a{
     display: block;
     text-decoration: none;
     color: black;
@@ -16,27 +16,27 @@
     transition: .2s;
 }
 
-.menu a:hover{
+ a:hover{
     transform:translateX(20px);
 }
 
-.menu a:active{
+a:active{
     border-left: 10px grey solid;
     transform: translateX(0);
 }
 
-.menu li:nth-child(1) a:active{
+.item:nth-child(1) a:active{
     border-left: 10px green solid;
 }
 
-.menu li:nth-child(2) a:active {
+.item:nth-child(2) a:active {
     border-left: 10px blue solid;
 }
 
-.menu li:nth-child(3) a:active {
+.item:nth-child(3) a:active {
     border-left: 10px orangered solid;
 }
 
-.menu li:nth-child(4) a:active {
+.item:nth-child(4) a:active {
     border-left: 10px red solid;
 }

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, NavLink, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import '../styles/App.css';
 import Header from './Header';
 import Footer from './Footer';

@@ -4,18 +4,18 @@ import styles from '../styles/Navigation.module.css';
 
 
 const list = [
-    { name: 'Strona Główna', path: '/strona', exact: true},
+    { name: 'Strona Główna', path: '/strona'},
     { name: 'Produkty', path: '/products' },
     { name: 'Kontakt', path: '/contact' },
-    {name: 'Panel Admina', path: '/panel admina'},
+    {name: 'Panel Admina', path: '/admin'},
 ]
 
 
 const Navigation = () => {
 
     const menu = list.map((item) => (
-        <li key={item.name}>
-            <NavLink to={item.path} exact={item.exact? item.exact:false}>{item.name}
+        <li className={styles.item} key={item.name}>
+            <NavLink to={item.path} >{item.name}
             </NavLink>
         </li>
     ))
