@@ -1,17 +1,17 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from '../pages/Home/Home';
-import Contact from '../pages/Contact/Contact';
+import HomePage from '../pages/HomePage/HomePage';
+import Contact from '../pages/ContactPage/ContactPage';
 import News from '../pages/News/News';
-import Admin from '../pages/Admin/Admin';
+import AdminPage from '../pages/AdminPage/AdminPage';
 
 const Page = () => {
     return ( 
         <Routes>
-            <Route path='/strona' element={<Home />} />
+            <Route path='/strona' element={<HomePage />} />
             <Route path='/products' element={<News />} />
             <Route path='/contact' element={<Contact />} />
-            <Route path='/admin' element={<Admin />} />
+            <Route path='/admin' element={<AdminPage />} />
         </Routes>
      );
 }

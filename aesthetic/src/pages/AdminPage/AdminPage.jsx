@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Admin = () => {
+const AdminPage = () => {
     return ( 
         <div>
             <input type="text" placeholder='wpisz login' />
@@ -11,4 +11,4 @@ const Admin = () => {
      );
 }
  
-export default Admin;
+export default AdminPage;
