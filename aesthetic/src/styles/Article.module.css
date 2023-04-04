@@ -1,3 +1,18 @@
-.title{
+article{
     margin-top: 30px;
+}
+
+.title{
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+
+.author{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.text{
+    font-size: 16px;
 }

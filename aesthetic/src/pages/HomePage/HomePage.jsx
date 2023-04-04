@@ -1,5 +1,5 @@
-import Article from '../components/Article/Article';
 import React from 'react';
+import Article from '../../components/Article';
 
 
 const articles = [
@@ -13,7 +13,7 @@ const articles = [
     id: 2,
     title: "Co to jest neurologopedia?",
     author: "Dagmara K.",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo in veniam, eaque tempore placeat eum impedit. Sequi ratione incidunt, voluptates exercitationem corporis assumenda facere perspiciatis dolorum laborum molestiae eum."
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Nemo quo in veniam, eaque tempore placeat eum impedit.Sequi ratione incidunt, voluptates exercitationem corporis assumenda facere perspiciatis dolorum laborum molestiae eum."
   },
   {
     id: 3,
@@ -29,10 +29,10 @@ const articles = [
   },
 ]
 
-const HomePage = () => {
 
-  const artList = articles.map(article => (
-    <Article key={article.id} {...articles} />
+const HomePage = () => {
+   const artList = articles.map(article => (
+    <Article key={article.id} {...article} />
   ))
     return (
       <div className="home">

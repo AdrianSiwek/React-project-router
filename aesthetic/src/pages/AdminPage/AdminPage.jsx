@@ -1,13 +1,15 @@
 import React from 'react';
+import {Route, Routes, redirect } from 'react-router-dom';
 
+const permission = true;
 
 const AdminPage = () => {
     return ( 
-        <div>
-            <input type="text" placeholder='wpisz login' />
-            <input type="text" placeholder='wpisz hasło' />
-            <button type='button'>Zaloguj</button>
-        </div>
+        <Routes>
+            <Route element={() => (
+                permission? <h3>Panel admina - Witaj!!</h3> : redirect("/login")
+            )} />
+        </Routes>
      );
 }
  

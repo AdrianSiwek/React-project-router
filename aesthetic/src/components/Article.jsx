@@ -1,14 +1,12 @@
 import styles from '../styles/Article.module.css';
-import React from 'react';
 
 
-
-const Article = ({title, text, author}) => {
+const Article = ({title, author, text}) => {
     return ( 
         <article>
             <h3 className={styles.title}>{title}</h3>
-            <span>{ author}</span>
-            <p>{text}</p>
+            <span className={styles.author}>{ author}</span>
+            <p className={styles.text}>{text}</p>
         </article>
      );
 }
