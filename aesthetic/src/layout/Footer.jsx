@@ -1,8 +1,11 @@
 import React from 'react';
+// import { Route, Routes } from 'react-router-dom';
 
 const Footer = () => {
     return ( 
-        <div>Footer</div>
+        <div>
+            <h2>Stopka</h2>
+        </div>
      );
 }
  

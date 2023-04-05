@@ -8,7 +8,7 @@ const ProductListPage = () => {
 
     const ListProducts = products.map(product => (
         <li className={styles.listProductsOne} key={product}>
-            <Link className={styles.link} to={`/product/&{product}`}>{product}</Link>
+            <Link className={styles.link} to={`/products/&{product}`}>{product}</Link>
         </li>
     ))
 

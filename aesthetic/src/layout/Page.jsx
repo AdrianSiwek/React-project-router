@@ -12,7 +12,7 @@ const Page = () => {
         <Routes>
             <Route path='/strona' element={<HomePage />} />
             <Route path='/products' element={<ProductsListPage />} />
-            <Route path='/product/:id' element={<ProductsPage />} />
+            <Route path='/products/:productId' element={<ProductsPage />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/admin' element={<AdminPage />} />
             <Route path='/login' element={<LoginPage />} />
