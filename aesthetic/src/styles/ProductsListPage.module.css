@@ -1,0 +1,23 @@
+.product h2{
+    margin-bottom: 20px;
+}
+
+.listProducts{
+    list-style: square;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.listProductsOne{
+    margin-bottom: 20px;
+}
+
+.link{
+    text-decoration: none;
+    color: crimson;
+}
+
+.link:hover{
+    text-decoration: underline;
+    color:aqua;
+}
